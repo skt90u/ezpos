@@ -1,0 +1,22 @@
+{
+  "name": "ezpos",
+  "version": "1.0.0",
+  "description": "a easy point of sale system written in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skt90u/ezpos"
+  },
+  "keywords": [
+    "ezpos"
+  ],
+  "author": "Norman Su",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skt90u/ezpos/issues"
+  },
+  "homepage": "https://github.com/skt90u/ezpos"
+}
