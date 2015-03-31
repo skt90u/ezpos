@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/skt90u/ezpos/issues"
   },
-  "homepage": "https://github.com/skt90u/ezpos"
+  "homepage": "https://github.com/skt90u/ezpos",
+  "dependencies": {
+    "consolidate": "^0.11.0",
+    "express": "^4.12.3",
+    "express-handlebars": "^2.0.0",
+    "mysql": "^2.6.1",
+    "swig": "^1.4.2",
+    "underscore": "^1.8.2"
+  }
 }

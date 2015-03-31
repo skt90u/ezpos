@@ -1,0 +1,24 @@
+{
+  "name": "ezpos",
+  "version": "1.0.0",
+  "homepage": "https://github.com/skt90u/ezpos",
+  "description": "mange client side javascript in ezpos",
+  "authors": [
+    "Norman Su"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.16",
+    "angular-bootstrap": "~0.12.1",
+    "jquery": "~2.1.3",
+    "jquery-widget": "*"
+  }
+}

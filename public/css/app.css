@@ -1,0 +1,39 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   padding: 10px 0 0 10px;
+   bottom:0;
+   width:100%;
+   min-height:60px;   
+   background: #1d1d1d;
+}
+
+.icon-tile-employee{
+   content: url(/image/employee01.png);
+}
+.icon-tile-customer{
+   content: url(/image/customer01.png);
+}
+.icon-tile-supplier{
+   content: url(/image/supplier01.png);
+}
+.icon-tile-product{
+   content: url(/image/bread02.png);
+}

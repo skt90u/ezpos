@@ -1,0 +1,40 @@
+<html>
+<head>
+    <link rel="stylesheet" href="metro/metro-bootstrap.min.css">
+    <link rel="stylesheet" href="metro/metro-bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="metro/iconFont.min.css">
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="metro/jquery.widget.min.js"></script>
+    <script src="metro/metro.min.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="metro">
+
+<div id="container">
+   <div id="header"></div>
+   <div id="body">
+   	{{{body}}}	
+   </div>
+   <div id="footer">
+	{{#each menuItems}}
+	<a href="{{this.href}}">
+	{{#if selected}}
+	<div class="tile bg-lightBlue">
+	{{else}}
+	<div class="tile bg-steel">
+	{{/if}}		
+		<div class="tile-content icon">
+			<i class="{{this.icon}}"></i>
+		</div>
+		<div class="tile-status">
+			<span class="name">{{this.name}}</span>
+		</div>
+	</div>
+	</a>
+	{{/each}}
+</div> <!-- footer -->
+</div>
+
+</body>
+</html>
