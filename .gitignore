@@ -5,10 +5,14 @@ bin-release/
 
 # Other files and folders
 .settings/
-.swn
-.swp
-.swo
 .DS_Store
+
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
