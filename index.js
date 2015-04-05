@@ -1,18 +1,17 @@
-var express = require('express'),
-    expressHbs = require('express-handlebars'),
-    routes = require('./routes'),
-    path = require('path'),
+var path = require('path'),
     _ = require('underscore'),
+	express = require('express'),
+    expressHbs = require('express-handlebars'),
+    routes = require('./lib/routes'),
     app = module.exports = express();
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/bower_components'));
 
-
 require('express-crud')(app);
 
 _.each(['employees'], function(modelName){
-  app.crud('/api/' + modelName, require('./models/' + modelName));  
+  app.crud('/api/' + modelName, require('./lib/models/' + modelName));  
 });
 
 app.set('views', __dirname + '/views');

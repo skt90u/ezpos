@@ -1,37 +1,12 @@
 <script src="js/controllers/employee_management.js"></script>
-<div ng-controller="employee_management">
+<div ng-controller="employee_management as thisCtrl">
     <div class="lpanel">
             <div class="button-set">
                 <button class="button info"><i class="icon-command-add on-right"></i>新增</button>
                 <button class="button default"><i class="icon-command-edit on-right"></i>編輯</button>
                 <button class="button warning"><i class="icon-command-delete on-right"></i>刪除</button>
             </div>
-            <table datatable="" class="row-border hover">
-                <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>First name</th>
-                    <th>Last name</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Foo</td>
-                    <td>Bar</td>
-                </tr>
-                <tr>
-                    <td>123</td>
-                    <td>Someone</td>
-                    <td>Youknow</td>
-                </tr>
-                <tr>
-                    <td>987</td>
-                    <td>Iamout</td>
-                    <td>Ofinspiration</td>
-                </tr>
-                </tbody>
-            </table>
+            <table datatable="" dt-options="thisCtrl.dtOptions" dt-columns="thisCtrl.dtColumns" class="row-border hover"></table>
     </div>
     <div class="rpanel">
         aaajj
