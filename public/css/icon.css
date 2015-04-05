@@ -1,0 +1,24 @@
+.icon-tile-employee{
+   content: url(/image/employee01.png);
+}
+.icon-tile-customer{
+   content: url(/image/customer01.png);
+}
+.icon-tile-supplier{
+   content: url(/image/supplier01.png);
+}
+.icon-tile-product{
+   content: url(/image/bread02.png);
+}
+.icon-command-add{
+   content: url(/image/command_add.png);
+   width:16px;
+}
+.icon-command-edit{
+   content: url(/image/command_edit.png);
+   width:16px;
+}
+.icon-command-delete{
+   content: url(/image/command_delete.png);
+   width:16px;
+}

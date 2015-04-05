@@ -1,0 +1,16 @@
+{{#each menuItems}}
+<a href="{{this.href}}">
+    {{#if selected}}
+    <div class="tile bg-lightBlue">
+    {{else}}
+     <div class="tile bg-steel">
+    {{/if}}		
+        <div class="tile-content icon">
+            <i class="{{this.icon}}"></i>
+        </div>
+        <div class="tile-status">
+            <span class="name">{{this.name}}</span>
+        </div>
+     </div>
+</a>
+{{/each}}
