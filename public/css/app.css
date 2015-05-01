@@ -27,6 +27,18 @@ body {
    background: #1d1d1d;
 }
 
+.lpanel{
+  padding: 0 10px 0 0;
+  float:left;
+  width:33%;
+  max-height:100%;
+  background:yellow;
+}
+.rpanel{
+  margin-left: 33%;
+  background:blue;
+}
+
 /*
 .lpanel{
   float:left;
