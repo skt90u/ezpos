@@ -6,9 +6,10 @@
 	 "ecma5"
    ],
    "loadEagerly": [ 
-	   "./node_modules/*/*.js"
+	   "underscore.js",
+	   "./node_modules/*/*.js", 
+	   "backbone.js"
    ],
    "plugins": {
-	"node": {}
    }
  }

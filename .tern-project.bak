@@ -1,0 +1,14 @@
+ {
+	// 選擇 ~/.vim/bundle/tern_for_vim/node_modules/tern/defs 裡面的內容
+   "libs": [
+     "browser",
+     "jquery",
+     "underscore"
+   ],
+   "loadEagerly": [ "*.js", "*/*.js", "*/*/*.js", "*/*/*/*.js" ],
+   "dontLoad": [ ".meteor" ],
+   "plugins": {
+	   "node":{},
+	   "meteor": {}
+   }
+ }
