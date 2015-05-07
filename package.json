@@ -2,7 +2,7 @@
   "name": "ezpos",
   "version": "1.0.0",
   "description": "a easy point of sale system written in nodejs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,5 +30,10 @@
     "mysql": "^2.6.1",
     "swig": "^1.4.2",
     "underscore": "^1.8.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.12.3",
+    "multer": "^0.1.8",
+    "supertest": "^0.15.0"
   }
 }
