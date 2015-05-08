@@ -5,7 +5,8 @@ var express  = require( 'express' ),
 	mongoose = require( 'mongoose' ),
 	Logger   = require( 'lib/logger' ),
 	logger   = new Logger( 'MAIN' ),
-    port     = process.env.PORT || 3000;
+	config   = require( 'lib/config'),
+    port     = config.port;
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
