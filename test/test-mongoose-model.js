@@ -55,8 +55,8 @@ describe( 'mongodb basic operations' , function() {
     });
   });
 
-  describe( 'create', function() {
-    it( 'create', function( done ) {
+  describe( 'create a document', function() {
+    it( 'create a document', function( done ) {
   		var document = new Model( data ); 
       document.save( function( err, createdData, count ){
         expect(err).to.not.exist; 
@@ -69,8 +69,8 @@ describe( 'mongodb basic operations' , function() {
     });
   });  
 
-  describe( 'read', function() {
-    it( 'read', function(done) {
+  describe( 'read documents', function() {
+    it( 'read documents', function(done) {
       Model.find({}, function(err, docs){
         expect(err).to.not.exist; 
         expect(docs).to.have.length(1);
@@ -79,8 +79,8 @@ describe( 'mongodb basic operations' , function() {
     });
   });  
 
-  describe( 'update', function() {
-    it( 'update', function(done) {
+  describe( 'update a document', function() {
+    it( 'update a document', function(done) {
         Model.update( { order: data.order}, { $set: { order: data.order + 1 } }, function( err, result ){
 			   expect(err).to.not.exist; 
          expect(result).to.exist;  
@@ -92,11 +92,11 @@ describe( 'mongodb basic operations' , function() {
     });
   });
 
-  describe( 'delete', function() {
-    it( 'delete', function(done) {
+  describe( 'delete a docuemnt', function() {
+    it( 'delete a document', function(done) {
         Model.remove( { order: data.order + 1 }, function( err, result ){
          expect(err).to.not.exist; 
-         expect(result).to.exist;  
+         expect(result).to.exist;           
          
          result = result.result;
          expect(result).to.exist;  
