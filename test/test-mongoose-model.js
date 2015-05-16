@@ -1,9 +1,9 @@
-// make it extremely unlikely that this test unintentionally drops someone's DB
-var config    = require( '../lib/config' ),
-	expect    = require( 'chai' ).expect,
-	mongoose  = require( 'mongoose' ),
+var rekuire   = require( 'rekuire' ),
+	config    = rekuire( 'config' ),
+	expect    = rekuire( 'chai' ).expect,
+	mongoose  = rekuire( 'mongoose' ),
 	modelName = 'employee',  
-	Model     = require( '../lib/config/model/' + modelName ),
+	Model     = rekuire( modelName ),
 	collectionName = modelName + 's';
 
 var data = {

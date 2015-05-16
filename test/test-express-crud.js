@@ -1,22 +1,23 @@
 // https://visionmedia.github.io/superagent/
 process.env.NODE_ENV = 'development';
 
-var context        = describe,
-    should         = require( 'should' ),
-    expect         = require( 'chai' ).expect,
-    request        = require( 'supertest' ),
-    mongoose       = require( 'mongoose' ),
-    urljoin        = require('url-join'),
-    querystring    = require( 'querystring' ),
-    _              = require( 'underscore' ),
-    async          = require( 'async' ),
-    app            = require( '../lib/server' ),
+var rekuire        = require( 'rekuire' ),
+    context        = describe,
+    should         = rekuire( 'should' ),
+    expect         = rekuire( 'chai' ).expect,
+    request        = rekuire( 'supertest' ),
+    mongoose       = rekuire( 'mongoose' ),
+    urljoin        = rekuire( 'url-join'),
+    querystring    = rekuire( 'querystring' ),
+    _              = rekuire( 'underscore' ),
+    async          = rekuire( 'async' ),
+    app            = rekuire( 'ezpos-server' ),
     agent          = request.agent(app),
-    config         = require( '../lib/config' ),
+    config         = rekuire( 'config' ),
     modelName      = 'employee',  
     collectionName = modelName + 's',
     url            = urljoin(config.crudApiRoot, modelName);    
-    Model          = require( '../lib/config/model/' + modelName ),
+    Model          = rekuire( modelName ),
     createdData    = [];
 
 // not working
